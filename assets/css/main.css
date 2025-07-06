@@ -6,6 +6,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+#intro{
+
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2298,6 +2303,12 @@ input, select, textarea {
 
 		}
 
+.inner{
+	padding:0px;
+	margin:0px;
+
+}
+
 	label {
 		color: #ffffff;
 		font-weight: bold;
@@ -2570,6 +2581,8 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+
+
 	}
 
 		.image img {
@@ -3928,10 +3941,47 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#intro {
+				background: url("plantrice.webp");
 				background-attachment: scroll;
+				background-size: 100% 100%;
 			}
 
 		}
+
+		/* From Uiverse.io by Shoh2008 */ 
+.loader {
+  display: block;
+  width: 84px;
+  height: 84px;
+  position: relative;
+}
+
+.loader:before , .loader:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #FFF;
+  transform: translate(-50% , -100%)  scale(0);
+  animation: push_401 2s infinite linear;
+}
+
+.loader:after {
+  animation-delay: 1s;
+}
+
+@keyframes push_401 {
+  0% , 50% {
+    transform: translate(-50% , 0%)  scale(1)
+  }
+
+  100% {
+    transform: translate(-50%, -100%) scale(0)
+  }
+}
 		
 
 @tailwind base;
